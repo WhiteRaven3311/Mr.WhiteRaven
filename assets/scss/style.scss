@@ -1,3 +1,5 @@
+@import "top-navbar";
+@import "bottom-navbar";
 * {
     padding: 0;
     margin: 0;
@@ -18,80 +20,4 @@ body {
     background-color: black;
     height: 100vh;
     width: 100vw;
-}
-
-.navbar {
-    display: flex;
-    background-image: url(../files/logos/global-nav-bg.png);
-    background-size: 2px;
-    padding: 0px;
-    margin: 0px;
-    height: max-content;
-    width: 100%;
-
-    .nav-link {
- 
-        cursor: pointer;
-        padding: 13px;
-        letter-spacing: 2px;
-        font-size: 12px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-right: 15px;
-        position: relative;
-        display: inline-block;
-
-        img {
-            margin-left: 10px;
-            transition: all .5s;
-        }
-    }
-
-    .l {
-
-        a {
-            font-size: 15px;
-            word-spacing: normal;
-            transition: all 0.5s;
-        }
-
-        a:hover {
-            filter: brightness(2);
-        }
-    }
-
-    .dropdown {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #222;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-
-        li {
-            color: #848484;
-            width: max-content;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            text-decoration: none;
-            display: block;
-        }
-    }
-
-    .nav-link:hover {
-        color: #89af67;
-        background-color: black;
-
-        .dropdown {
-            display: block;
-        }
-
-        img {
-            rotate: -180deg;
-
-        }
-    }
-
-
 }
