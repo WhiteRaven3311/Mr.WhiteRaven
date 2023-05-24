@@ -1,6 +1,3 @@
-@import "top-navbar";
-@import "bottom-navbar";
-@import "video";
 * {
     padding: 0;
     margin: 0;
@@ -22,3 +19,8 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
+@import "top-navbar";
+@import "bottom-navbar";
+@import "video";
+@import "game-modes"

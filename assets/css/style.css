@@ -1,3 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #a6a6a6;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
 .navbar1 {
   display: flex;
   background-image: url(../files/logos/global-nav-bg.png);
@@ -211,7 +233,8 @@
   display: grid;
   height: fit-content;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  font-family: "Roboto";
 }
 .video-part video {
   position: absolute;
@@ -221,25 +244,26 @@
   width: 100%;
 }
 .video-part .img1 {
-  align-self: center;
   justify-self: center;
   grid-row: 2/4;
-  grid-column: 2/5;
+  grid-column: 1/5;
+  align-self: baseline;
 }
 .video-part p {
-  align-self: center;
+  align-self: start;
   justify-self: center;
-  grid-row: 3/5;
-  grid-column: 2/5;
+  grid-row: 4/5;
+  grid-column: 1/5;
   font-size: x-large;
   color: #ffe93c;
+  transform: scaleY(1.3);
 }
 .video-part button {
-  align-self: end;
+  align-self: baseline;
   justify-self: center;
-  grid-row: 3/5;
-  grid-column: 2/5;
-  padding: 15px 38px 15px 38px;
+  grid-row: 5/6;
+  grid-column: 1/5;
+  padding: 12px 40px 12px 40px;
   font-size: 14px;
   letter-spacing: 1px;
   background-color: #ffe93c;
@@ -253,36 +277,110 @@
 .video-part .img2 {
   justify-self: center;
   align-self: center;
-  grid-row: 4/5;
+  grid-row: 5/6;
+  justify-self: center;
   grid-column: 9/10;
 }
 .video-part .img3 {
   justify-self: center;
   align-self: center;
-  grid-row: 4/5;
-  grid-column: 8/9;
+  grid-row: 5/6;
+  grid-column: 7/9;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.title {
+  width: 100%;
+  height: 173px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title .title-c {
+  width: 100%;
+  height: min-content;
+}
+.title h1 {
+  margin-top: 60px;
+  font-family: "Oswald";
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 100%;
+  height: 39px;
+  color: #ffe93c;
+  line-height: 1.3;
+}
+.title p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  height: 24px;
+  width: 100%;
 }
 
-li {
-  list-style-type: none;
+.gamemodes {
+  width: 100%;
 }
-
-a {
-  color: #a6a6a6;
-  text-decoration: none;
-  letter-spacing: 2px;
+.gamemodes .pics {
+  display: flex;
 }
-
-body {
-  background-color: black;
-  height: 100vh;
-  width: 100vw;
+.gamemodes .pics .pic1 {
+  background-image: url(../files/modes/modes-battle-royale.jpg);
+  width: 50%;
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-content: end;
+}
+.gamemodes .pics .pic1 .content {
+  padding-left: 40px;
+  width: 100%;
+  height: fit-content;
+}
+.gamemodes .pics .pic1 .content h3 {
+  font-size: 24px;
+  font-family: "Oswald";
+  color: #ffe93c;
+}
+.gamemodes .pics .pic1 .content p {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: #ffffff;
+}
+.gamemodes .pics .pic2 {
+  background-image: url(../files/modes/modes-multiplayer.jpg);
+  width: 50%;
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-content: end;
+}
+.gamemodes .pics .pic2 .content {
+  padding-left: 40px;
+  width: 100%;
+  height: fit-content;
+}
+.gamemodes .pics .pic2 .content h3 {
+  font-size: 24px;
+  font-family: "Oswald";
+  color: #ffe93c;
+}
+.gamemodes .pics .pic2 .content p {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
