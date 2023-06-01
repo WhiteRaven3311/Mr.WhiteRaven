@@ -383,4 +383,33 @@ body {
   color: #ffffff;
 }
 
+.maps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#carouselExample {
+  width: 80%;
+}
+
+.carousel-caption {
+  color: #ffe93c;
+}
+.carousel-caption h5 {
+  display: flex;
+  justify-content: start;
+  font-family: "Oswald";
+  font-size: 30px;
+}
+
+.carousel-control-prev-icon {
+  transition: all 500ms;
+}
+
+.carousel-control-prev-icon:hover {
+  filter: brightness(1.7);
+}
+
 /*# sourceMappingURL=style.css.map */
