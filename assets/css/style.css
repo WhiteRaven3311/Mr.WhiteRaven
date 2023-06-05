@@ -412,4 +412,99 @@ body {
   filter: brightness(1.7);
 }
 
+.ch {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ch .infoch {
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  transition: all 1s;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+  width: 25vw;
+  max-width: 500px;
+  opacity: 0;
+  color: #ffffff;
+  font-weight: 200;
+}
+.ch .chc {
+  position: relative;
+}
+.ch .chc img {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+.ch .chc h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #ffe93c;
+  font-family: "Oswald";
+  margin-left: 10px;
+  position: absolute;
+  top: 90%;
+}
+.ch .chc:hover .infoch {
+  opacity: 1;
+}
+
+.news {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 18%, rgb(145, 134, 0) 33%, rgb(231, 206, 1) 50%, rgb(145, 134, 0) 67%, rgb(0, 0, 0) 83%, rgb(0, 0, 0) 100%);
+}
+.news .links {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  background-color: black;
+  width: 100%;
+  height: 346px;
+  display: flex;
+  justify-content: center;
+}
+.news .links h4 {
+  padding-left: 2rem;
+  color: #ffe93c;
+  font-family: "Oswald";
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.news .links li {
+  margin-bottom: 5px;
+  list-style: none;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#imagenews {
+  filter: brightness(0.7);
+  background-image: url(../files/CODM-S05-TOUT.jpg);
+  background-size: cover;
+  margin-right: 30px;
+  width: 700px;
+  height: 346px;
+  background-color: black;
+  display: flex;
+  align-items: end;
+}
+#imagenews h4 {
+  margin-left: 15px;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */
