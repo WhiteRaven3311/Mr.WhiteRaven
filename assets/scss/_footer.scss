@@ -1,0 +1,61 @@
+footer {
+    width: 100%;
+    height: 234px;
+    display: flex;
+    align-items: center;
+
+    .fimages {
+        float: left;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fimages2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+
+            .activision {
+                width: 155px;
+                height: 37px;
+
+            }
+
+        }
+
+    }
+    .finfo{
+        margin-left: 2rem;
+        width: 50%;
+        p{
+            color: #adabad;
+            font-size: 14px;
+        }
+        ul{
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            span{
+                margin-right: 17px;
+            }
+            a{
+                color: #f0db38;
+                transition: all 300ms;
+            }
+
+            li{
+                font-size: 13px;
+                letter-spacing: 2px;
+                margin-right: 17px;
+                
+            }
+            a:hover{
+                color: white;
+            }
+        }
+    }
+}
