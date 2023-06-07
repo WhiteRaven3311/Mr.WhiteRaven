@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #a6a6a6;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+@import "navbar";
+@import "form";
+@import "footer";
