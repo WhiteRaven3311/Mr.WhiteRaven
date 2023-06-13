@@ -5,35 +5,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .dc1{
+
+    .dc1 {
         width: 100%;
-        height:99.5%;
+        height: 99.5%;
         background-color: white;
         background-image: url(../files/logos/download-now-desktop.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
+
     .pics {
         float: left;
         width: 50%;
         height: 100%;
     }
-    .dow-t{
+
+    .dow-t {
         display: flex;
         justify-content: center;
-        align-items: center ;
+        align-items: center;
         flex-direction: column;
         float: right;
         width: 50%;
         height: 100%;
-        h2{
+
+        h2 {
             margin-top: 10px;
             margin-bottom: 15px;
             font-family: "Roboto";
             font-size: 30px;
         }
     }
+}
+
+.dc2 {
+    display: none;
 }
 
 .logocod {
@@ -44,6 +52,84 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .img3 {
     margin-right: 20px;
+}
+
+@media screen and (max-width:816px) {
+    .dc {
+        display: none;
+    }
+
+    .dc2 {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+
+        .dcp {
+            justify-self: start;
+            width: 100vw;
+            height: 60%;
+            background-image: url(../files/logos/mobile-download-now.jpg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: scale(.9);
+        }
+
+        .dct {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 40%;
+
+            .logo {
+                background-image: url(../files/logos/cod-m-logo-dark.png);
+                width: 80%;
+                height: 100px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            #p {
+                font-size: 24px;
+                text-transform: uppercase;
+                font-family: "Roboto", sans-serif;
+                font-weight: 600;
+            }
+
+            .video-p {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 60px;
+                .pic1, .pic2{
+                    width: 50%;
+                    height: 100%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                .pic1 {
+                    float: left;
+                    background-position: right;
+                    background-image: url(../files/logos/apple-en.png);
+                }
+
+                .pic2{
+                    margin-left: 5px;
+                    float: right;
+                    background-position: left;
+                    background-image: url(../files/logos/google-en.png);
+                }
+            }
+        }
+    }
 }

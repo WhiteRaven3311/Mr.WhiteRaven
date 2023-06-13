@@ -16,5 +16,8 @@
     "eslint-plugin-import": "^2.27.5",
     "sass": "^1.62.1",
     "scss": "^0.2.4"
+  },
+  "dependencies": {
+    "swiper": "^9.3.2"
   }
 }

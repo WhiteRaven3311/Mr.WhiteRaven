@@ -46,17 +46,15 @@
 
         .pic1{
             background-image: url(../files/modes/modes-battle-royale.jpg);
-            width: 50%;
             height: 400px;
             background-size: cover;
+            background-position: center;
             display: flex;
             flex-direction: column;
             justify-content: end;
             align-content: end;
             .content{
-                padding-left: 40px;
-                width: 100%;
-                height: fit-content;
+
                 h3{
                     font-size: 24px;
                     font-family: "Oswald";
@@ -72,17 +70,14 @@
 
         .pic2{
             background-image: url(../files/modes/modes-multiplayer.jpg);
-            width: 50%;
             height: 400px;
             background-size: cover;
             display: flex;
+            background-position: center;
             flex-direction: column;
             justify-content: end;
             align-content: end;
             .content{
-                padding-left: 40px;
-                width: 100%;
-                height: fit-content;
                 h3{
                     font-size: 24px;
                     font-family: "Oswald";
@@ -98,4 +93,24 @@
         
     }
 
+}
+
+@media screen and (max-width:992px) {
+    .pics {
+        flex-direction: column;
+        .pic1, .pic2 {
+            width: 100%;
+        }
+    }
+    
+}
+@media screen and (min-width:992px) {
+    .pic1, .pic2{
+        width: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    
 }

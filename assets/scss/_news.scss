@@ -5,8 +5,9 @@
     justify-content: center;
     align-items: center;
     background: rgb(0, 0, 0);
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 18%, rgba(145,134,0,1) 33%, rgba(231,206,1,1) 50%, rgba(145,134,0,1) 67%, rgba(0,0,0,1) 83%, rgba(0,0,0,1) 100%); 
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 18%, rgba(145, 134, 0, 1) 33%, rgba(231, 206, 1, 1) 50%, rgba(145, 134, 0, 1) 67%, rgba(0, 0, 0, 1) 83%, rgba(0, 0, 0, 1) 100%);
+
     .links {
         display: flex;
         flex-direction: column;
@@ -16,7 +17,8 @@
         height: 346px;
         display: flex;
         justify-content: center;
-        h4{
+
+        h4 {
             padding-left: 2rem;
             color: #ffe93c;
             font-family: "Oswald";
@@ -25,7 +27,7 @@
             margin-bottom: 25px;
         }
 
-        li{
+        li {
             margin-bottom: 5px;
             list-style: none;
             color: #ffffff;
@@ -37,21 +39,74 @@
 
 }
 
-#imagenews{
+#imagenews {
     filter: brightness(0.7);
     background-image: url(../files/CODM-S05-TOUT.jpg);
     background-size: cover;
     margin-right: 30px;
-    width: 700px; 
+    width: 700px;
     height: 346px;
     background-color: black;
     display: flex;
     align-items: end;
-    h4{
+
+    h4 {
         margin-left: 15px;
         width: 100%;
         display: flex;
         justify-self: center;
         color: #ffffff;
     }
+}
+
+@media screen and (max-width:992px) {
+
+    .news {
+        padding-top: 2.5px;
+        flex-direction: column-reverse;
+        height: max-content;
+        position: relative;
+
+        #imagenews {
+            background-size: cover;
+            width: 100%;
+            margin-top: 80px;
+            height: calc(50% - 100%);
+            margin-right: 0;
+        }
+
+        .links {
+            height: 300px;
+
+            .links-text {
+                font-size: 15px;
+            }
+        }
+
+    }
+
+    .header-news {
+        width: 90%;
+        background-color: black;
+        height: 83px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: absolute;
+        top: 2px;
+        z-index: 1;
+    }
+
+
+}
+
+@media screen and (max-width:620px) {
+    .news {
+        #imagenews {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
 }
